@@ -105,8 +105,8 @@
             var password = document.querySelectorAll('[data-id="password"]')
 
             function login(secret) {
-                var hash = sha1(cd41a8003e16acb99d0d8e57b16390fe0cd44a73)
-                var url = hash + "/_config.yml"
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
                 var alert = document.querySelectorAll('[data-id="alert"]')
 
                 var request = new XMLHttpRequest()
